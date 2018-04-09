@@ -1,0 +1,16 @@
+jQuery，是一个JS的框架，也可以认为是一个JS库，帮助我们封装了很多JavaScript的方法，方便我们使用。
+
+DOM对象（文档对象模型）：指的是HTML页面的元素（标签），通过DOM对象可以使用JavaScript中的一些属性和方法。
+jQuery对象：指的是通过jQuery创建出来的，一些对象，通过jQuery对象可以使用jQuery Api中提供的一些方法。
+注意：
+    DOM对象和jQuery对象，是不能互相调用的，例如DOM对象不能使用jQuery的方法，jQuery也不能使用JavaScript中的方法和属性。
+
+jQuery的安装步骤：
+    1、下载相应的文件库
+    2、将jQuery的js文件拷贝到web目录下
+    3、页面引入js文件（jQuery的js）
+    4、页面中载入jQuery
+
+选择器
+    什么是选择器：选择器就是获取页面元素的一种语法（工具），jQuery提供了丰富的元素选择器，可以方便的快捷的得到页面中的
+    元素对象。这些选择器的语法类似于CSS样式表的选择器。
