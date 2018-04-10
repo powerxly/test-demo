@@ -32,10 +32,22 @@
                     $(this).removeClass("img2");
                     $(this).addClass("img1");
             })
+            //为id为butOne的对象帮i当一个只能使用一次的点击事件
+            $("#butOne").one("click",function () {
+                alert("点击了一次按钮");
+            })
+            //为id为butTwo的对象绑定了一个点击事件
+            $("#butTwo").bind("click",function () {
+                alert("点击了一次按钮");
+                //移除出发这个事件的Jquery对象的点击事件
+                $(this).unbind("click");
+            })
         })
     </script>
 </head>
 <body>
     <img src="images/pic1.gif" alt="" class="img1" id="img"/>
+    <input type="button" value="按钮" id="butOne"/>
+    <input type="button" value="自定义按钮" id="butTwo"/>
 </body>
 </html>
